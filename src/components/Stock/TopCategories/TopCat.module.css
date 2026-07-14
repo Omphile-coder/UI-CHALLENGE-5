@@ -1,0 +1,45 @@
+.item1{
+    background-image: url("../../../assets/coffee-mocha.png");
+    height: 200px;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    
+    border-radius: 20px;
+    
+   
+}
+.item2{
+    background-image: url("../../../assets/expresso-americano.png");
+     height: 200px;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    
+     border-radius: 20px;
+  
+}
+
+.item3{
+    background-image: url("../../../assets/cappuccino.png");
+     height: 200px;
+    background-size: 250px;
+    background-repeat: no-repeat;
+  
+     border-radius: 20px;
+
+}
+.item-container{
+    font-size: 12px;
+    color: white;
+    
+    max-width: calc(100%-40px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 0.25fr));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.lines{
+    width: 25px;
+    color: white;
+    
+}

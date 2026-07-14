@@ -1,0 +1,53 @@
+nav{
+    position: fixed;
+    top: 0cm;
+    height: 60px;
+    width: 100vw;
+    background-color:  rgb(234,205,189);
+    
+
+}
+
+.logo{
+    height: 50px;
+   
+}
+
+.content {
+
+margin: auto;
+
+display: flex;
+align-items: center;
+justify-content:space-between;
+}
+
+.link{
+
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+
+.links{
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link:hover{
+color: rgb(220, 220, 220);
+
+}
+
+.search-icon{
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

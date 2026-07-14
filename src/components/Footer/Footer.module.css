@@ -1,0 +1,41 @@
+table {
+  border-collapse: collapse;
+  
+  width: 80%;
+  margin: auto;
+  background-color: black;
+  color: white;
+  
+}
+
+.line{
+    width: 778px;
+    margin-left: 120px;
+    color: white;
+    align-items: center;
+}
+
+th, td {
+  text-align: left;
+  padding:8px;
+}
+
+.footer-cont{
+      background-color: black;
+}
+
+.bottom-footer{
+
+    background-color: #6E5A53;
+    width:778px;
+     margin-left: 120px;
+    
+}
+
+li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    color: white;
+    
+}
