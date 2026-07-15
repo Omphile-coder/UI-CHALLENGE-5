@@ -2,6 +2,7 @@
  height: 350px;
  width: 100%;
   max-width: calc(100% - 40px);
+    color: white;
 
 
 }
@@ -20,12 +21,13 @@
      padding: 20px;
      margin: auto;
      border-radius: 40px;
-     
+       
 
 }
+
 .item-one{
     background-image: url("../../../assets/coffee-mocha.png");
-    
+   
 }
 .item-two{
     background-image: url('/src/assets/expresso-americano.png');
@@ -37,4 +39,5 @@
 .divs-container{
     display: flex;
     padding:0px 10px;
+    
 }
