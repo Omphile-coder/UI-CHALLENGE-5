@@ -12,6 +12,10 @@
     flex-direction: column;
     gap: 10px;
 }
+.socials{
+    line-height: 1.5rem;
+    color: rgb(234,205,189);
+}
 
 
 @media screen and (max-width: 768px) {

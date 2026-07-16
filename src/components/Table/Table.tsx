@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Table.module.css";
 import { ContentContainer } from "../ContentContainer/ContentContainer";
 
-
 export const Table = () => {
   return (
     <ContentContainer className={styles.footerGrid}>
@@ -30,7 +29,9 @@ export const Table = () => {
         <h4>Follow us</h4>
         <div className={styles.socials}>
           <i className="bi bi-instagram"></i>
+          <br />
           <i className="bi bi-facebook"></i>
+          <br />
           <i className="bi bi-youtube"></i>
         </div>
       </div>

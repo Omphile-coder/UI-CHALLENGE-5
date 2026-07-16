@@ -72,3 +72,8 @@ position: relative;
 .hero-spacing{
   line-height: 2px;
 }
+
+.shop-btn{
+  border-radius: 8px;
+  border: none;
+}

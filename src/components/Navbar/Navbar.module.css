@@ -1,7 +1,7 @@
 nav{
     position: fixed;
     top: 0;
-    height: 60px;
+    height: 100px;
     width: 100%;
     background-color:  rgb(234,205,189);
     z-index: 100;
@@ -9,7 +9,7 @@ nav{
 
 }
 .search-icon{
-    height: 40px;
+    height: 100px;
     margin-top: 0px;
     
 }

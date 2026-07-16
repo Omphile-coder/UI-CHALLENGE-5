@@ -20,8 +20,7 @@
 .item-container{
     font-size: 12px;
     
-    max-width: calc(100%);
-    /* padding: 20px; */
+    max-width: calc(100%); 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 0.25fr));
     column-gap: 10px;

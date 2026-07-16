@@ -14,12 +14,12 @@ export const Categories = () => {
           justifyContent: "center",
         }}
       >
-        Top Categories
+        TOP CATEGORIES
       </Text>
       <Text
         variant="p"
         style={{
-          color: "black",
+          color: "grey",
           textAlign: "center",
           justifyContent: "center",
         }}

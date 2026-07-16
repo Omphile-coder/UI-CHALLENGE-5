@@ -21,7 +21,7 @@ export const TopMilkShakeItemCard = ({
   return (
     <article className={styles["item-card"]}>
       <button className={styles["like-btn"]}>
-        <i className="bi bi-hand-thumbs-up-fill"></i>
+        <i className="bi bi-hand-thumbs-up-fill"> </i>
         {likes} likes
       </button>
       <img
