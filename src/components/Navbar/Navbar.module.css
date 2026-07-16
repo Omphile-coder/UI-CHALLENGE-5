@@ -1,57 +1,76 @@
-nav{
+
+.navContainer {
     position: fixed;
     top: 0;
     height: 100px;
     width: 100%;
-    background-color:  rgb(234,205,189);
+    background-color: rgb(234,205,189);
     z-index: 100;
-    
-
-}
-.search-icon{
-    height: 100px;
-    margin-top: 0px;
-    
-}
-
-
-.logo{
-    height: 100px;
-   
-}
-.links{
-
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .content {
-
-margin: auto;
-
-display: flex;
-align-items: center;
-justify-content:space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
-.link{
+.logo {
+    height: 100px;
+}
 
+.links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.rightActions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hamburgerBtn {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: black;
+}
+
+
+@media screen and (max-width: 850px) {
+    .hamburgerBtn {
+        display: block;
+    }
+
+    .links {
+        display: none; 
+        position: absolute;
+        top: 100px; 
+        left: 0;
+        width: 100%;
+        background-color: rgb(234,205,189);
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 20px;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .links.open {
+        display: flex;
+    }
+}
+
+.search-icon{
+    height: 50px;
+}
+.link{
     text-decoration: none;
     color: black;
-    padding: 5px 10px;
-    cursor: pointer;
-
+    gap: 5`0px;
 }
-
-
-
-.link:hover{
-color: rgb(220, 220, 220);
-
-}
-
-.g{
-    display: flex;
-}
-

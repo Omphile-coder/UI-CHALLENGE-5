@@ -1,4 +1,4 @@
-footer{
+/* footer{
       background-color:rgb(30, 30, 30);
 }
 
@@ -26,4 +26,46 @@ li{
 .list{
     margin:auto;
         background-color:rgb(30, 30, 30);
+}
+
+ */
+
+
+footer {
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 50px 20px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+ul {
+    padding: 0;
+    margin-top: 40px;
+}
+
+li {
+    display: inline-block; 
+    list-style: none;
+    padding: 10px 15px;
+    background-color: rgb(127, 100, 89);
+   
+   
+}
+
+.list {
+    margin: auto;
+    text-align: center;
+    background-color: transparent;
 }

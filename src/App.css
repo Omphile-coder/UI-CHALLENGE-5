@@ -1,18 +1,37 @@
-#app-container{
+/* #app-container{
   min-height: calc(100vh - 100px);
   position: relative;
   width: 100vw;
   padding-bottom: 100px;
-}
+} */
 #scrollable{
   padding-top:100px ;
 }
 
-html{
+/* html{
   background-color:  rgb(234,205,189);
 }
 footer{
 background-color:  rgb(30,30,30);
 
 
+} */
+
+
+#app-container {
+  min-height: calc(100vh - 100px);
+  position: relative;
+
+  width: 100%; 
+  padding-bottom: 100px;
+
+  overflow-x: hidden; 
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: rgb(234,205,189);
 }

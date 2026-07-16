@@ -7,7 +7,10 @@ type Props = {
 
 export const ContentContainer = ({ children, className }: Props) => {
   return (
-    <div className={className} style={{ maxWidth: 1105, padding: 5 }}>
+    <div
+      className={className}
+      style={{ maxWidth: 1105, padding: 5, margin: "0 auto" }}
+    >
       {children}
     </div>
   );
