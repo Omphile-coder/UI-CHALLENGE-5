@@ -68,3 +68,7 @@ position: relative;
 .wave-container .shape-fill {
     fill: rgb(234,205,189);
 }
+
+.hero-spacing{
+  line-height: 2px;
+}

@@ -24,8 +24,15 @@ export const Hero = () => {
 
       {/* Absolute overlay for text */}
       <div className={styles["hero-overlay"]}>
-        <Text variant="p">FRESHLY ROASTED</Text>
-        <Text variant="h1">COFFEE</Text>
+        <div className={styles["hero-spacing"]}>
+          <Text variant="h1" style={{ fontWeight: "small", color: "white" }}>
+            FRESHLY ROASTED
+          </Text>
+
+          <Text variant="h1">COFFEE</Text>
+        </div>
+        <br />
+        <br />
         <button className={styles["shop-btn"]}>Shop now</button>
       </div>
 

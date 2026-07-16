@@ -26,6 +26,8 @@
     grid-template-columns: repeat(auto-fit, minmax(240px, 0.25fr));
     column-gap: 10px;
     row-gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 .btn{
     border-radius: 6px;
@@ -51,6 +53,10 @@
     padding: 5px;
     margin: 15px;
 }
+
+/* .item-card:hover{
+    transform: translatey(-25PX);
+} */
 
 @media screen and (max-width: 1040px) {
     .item-container{
