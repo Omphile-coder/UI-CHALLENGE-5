@@ -15,8 +15,26 @@ type TopMilkShakesProps = {
 export const TopMilk = ({ topShakes }: TopMilkShakesProps) => {
   return (
     <ContentContainer>
-      <Text variant={"h2"}>TOP MILK SHAKES</Text>
-      <Text variant={"p"}>Explore The Recent Most Bought Shakes This Week</Text>
+      <Text
+        variant={"h2"}
+        style={{
+          color: "black",
+          textAlign: "center",
+          justifyContent: "center",
+        }}
+      >
+        TOP MILK SHAKES
+      </Text>
+      <Text
+        variant={"p"}
+        style={{
+          color: "black",
+          textAlign: "center",
+          justifyContent: "center",
+        }}
+      >
+        Explore The Recent Most Bought Shakes This Week
+      </Text>
 
       <div className={styles["item-container"]}>
         {topShakes &&

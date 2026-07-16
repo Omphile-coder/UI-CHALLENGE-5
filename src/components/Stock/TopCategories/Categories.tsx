@@ -3,15 +3,27 @@ import styles from "./Categories.module.css";
 import { ContentContainer } from "../../ContentContainer/ContentContainer";
 import { Text } from "../../Text/Text";
 
-
 export const Categories = () => {
   return (
     <ContentContainer className={styles.MainContainer}>
-     
-      <Text variant="h2" style={{ color: "black" }}>
+      <Text
+        variant="h2"
+        style={{
+          color: "black",
+          textAlign: "center",
+          justifyContent: "center",
+        }}
+      >
         Top Categories
       </Text>
-      <Text variant="p" style={{ color: "black" }}>
+      <Text
+        variant="p"
+        style={{
+          color: "black",
+          textAlign: "center",
+          justifyContent: "center",
+        }}
+      >
         Explore The Recent Most Bought Shakes This Week
       </Text>
 
