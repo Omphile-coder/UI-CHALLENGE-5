@@ -5,11 +5,14 @@ import { ContentContainer } from "../ContentContainer/ContentContainer";
 import logo from "../../assets/cofty-solution-logo.png";
 import searchIcon from "../../assets/search-icon.png";
 
+// Navbar.tsx
 export const Navbar = () => {
   return (
     <nav>
       <ContentContainer className={styles.content}>
-        <img src={logo} alt="Cofty solution logo" className={styles["logo"]} />
+        <img src={logo} alt="Cofty solution logo" className={styles.logo} />
+
+        {/* Let this sit in the center naturally */}
         <div className={styles.links}>
           <a href="/#" className={styles.link}>
             Home
@@ -20,22 +23,20 @@ export const Navbar = () => {
           <a href="/#" className={styles.link}>
             Blog
           </a>
-
           <a href="/#" className={styles.link}>
             Media
           </a>
-
           <a href="/#" className={styles.link}>
             Contact
           </a>
+        </div>
 
-          <div className={styles["search-icon"]}>
-            <img
-              src={searchIcon}
-              alt="Cofty solution logo"
-              className={styles["search-icon"]}
-            />
-          </div>
+        <div className={styles["search-icon"]}>
+          <img
+            src={searchIcon}
+            alt="Search"
+            className={styles["search-icon"]}
+          />
         </div>
       </ContentContainer>
     </nav>

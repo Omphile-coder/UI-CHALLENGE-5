@@ -20,6 +20,7 @@ import mocha from "./assets/mocha-shake.png";
 import lavender from "./assets/lavender-shake.png";
 import caramel from "./assets/caramel-shake.png";
 import Categories from "./components/Stock/TopCategories/Categories";
+import { Hero } from "./components/Stock/Hero/Hero";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -74,6 +75,7 @@ function App() {
     <div id="app-container">
       <div id="scrollable">
         <Navbar />
+        <Hero />
         <Categories />
         <TopMilk topShakes={topShakes} />
         <StockContainer stock={stock} />

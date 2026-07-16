@@ -1,16 +1,28 @@
 nav{
     position: fixed;
-    top: 0cm;
-    height: 60px;
-    width: 100vw;
+    top: 0;
+    height: 100px;
+    width: 100%;
     background-color:  rgb(234,205,189);
     
 
 }
+.search-icon{
+    height: 40px;
+    margin-top: 0px;
+    
+}
+
 
 .logo{
-    height: 50px;
+    height: 100px;
    
+}
+.links{
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .content {
@@ -31,23 +43,14 @@ justify-content:space-between;
 
 }
 
-.links{
 
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
 .link:hover{
 color: rgb(220, 220, 220);
 
 }
 
-.search-icon{
-    height: 40px;
-
+.g{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
 }
+

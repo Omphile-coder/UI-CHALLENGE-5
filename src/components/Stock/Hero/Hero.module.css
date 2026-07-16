@@ -1,0 +1,70 @@
+.top-Image{
+
+    height: 40%;
+    width: 100%;
+
+}
+
+
+.top-cont {
+  position: relative;
+  width: 100%;
+}
+
+.top-Image {
+  width: 100%;
+  height: 400px; 
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #D0AF9E; 
+}
+
+.wave-container-top{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+}
+
+.wave-container-top svg{
+position: relative;
+    display: block;
+    width: calc(148% + 1.3px);
+    height: 153px;
+}
+
+
+.wave-container-top .shape-fill {
+    fill: rgb(234,205,189);
+}
+
+.wave-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-container svg {
+    position: relative;
+    display: block;
+    width: calc(148% + 1.3px);
+    height: 113px;
+    transform: rotateY(180deg);
+}
+
+.wave-container .shape-fill {
+    fill: rgb(234,205,189);
+}

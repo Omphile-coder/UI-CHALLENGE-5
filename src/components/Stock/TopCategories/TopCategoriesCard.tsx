@@ -2,10 +2,12 @@ import React from "react";
 import styles from "./TopCat.module.css";
 import { ContentContainer } from "../../ContentContainer/ContentContainer";
 import { Text } from "../../Text/Text";
+import imageIcon from "../../../assets/free-wavy-form-design.png";
 
 export const TopCategoriesCard = () => {
   return (
     <article>
+      
       <Text variant={"h3"}>TOP CATEGORIES</Text>
       <Text variant={"p"}>Explore The Recent Most Bought Drinks This Week</Text>
 

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./TopMilk.module.css";
 import { Text } from "../../Text/Text";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export type TopMilkShakeItemCardProps = {
   name: string;
@@ -19,7 +20,10 @@ export const TopMilkShakeItemCard = ({
 }: TopMilkShakeItemCardProps) => {
   return (
     <article className={styles["item-card"]}>
-      <button className={styles["like-btn"]}>{likes} likes</button>
+      <button className={styles["like-btn"]}>
+        <i className="bi bi-hand-thumbs-up-fill"></i>
+        {likes} likes
+      </button>
       <img
         src={imgLink}
         className={styles["item-image"]}

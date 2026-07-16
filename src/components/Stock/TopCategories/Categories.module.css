@@ -6,24 +6,7 @@
 
 
 }
-.item-one, .item-two,.item-three{
 
-    height: 200px;
-    width: 300px;
-    border: 1px solid ;
-    background-size: cover;   
-  
-    text-align: center;
-    padding-top:400px;
-    align-items: center;
-    justify-content: center;
-     color: white;
-     padding: 20px;
-     margin: auto;
-     border-radius: 40px;
-       
-
-}
 
 .item-one{
     background-image: url("../../../assets/coffee-mocha.png");
@@ -40,4 +23,43 @@
     display: flex;
     padding:0px 10px;
     
+}
+
+.top-Image{
+    
+    width:100%;
+    height: 50%;
+    background-size: 250px;
+    background-repeat: no-repeat;
+  
+    border-radius: 20px;
+
+}
+
+
+.divs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+.item-one, .item-two, .item-three {
+    height: 250px; 
+    width: 100%;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+@media screen and (max-width: 1040px) {
+    .divs-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }
