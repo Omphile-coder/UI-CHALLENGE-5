@@ -22,7 +22,6 @@ export const Hero = () => {
 
       <img src={imageIcon} alt="Coffee beans" className={styles["top-Image"]} />
 
-      {/* Absolute overlay for text */}
       <div className={styles["hero-overlay"]}>
         <div className={styles["hero-spacing"]}>
           <Text variant="h1" style={{ fontWeight: "small", color: "white" }}>

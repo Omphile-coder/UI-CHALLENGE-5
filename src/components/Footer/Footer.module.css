@@ -1,40 +1,9 @@
-/* footer{
-      background-color:rgb(30, 30, 30);
-}
-
-table{
-      background-color:rgb(30, 30, 30);
-}
-.footer{
-    background-color:rgb(30, 30, 30);
-  
-    text-align: center;
-    justify-content: center;
-    color: white;
-    padding: 50px;
-    width: 100%;
-    position:absolute;
-}
-
-li{
-    display: inline;
-    list-style: none;
-    padding: 10px;
-    background-color:rgb(127, 100, 89);
-  
-}
-.list{
-    margin:auto;
-        background-color:rgb(30, 30, 30);
-}
-
- */
-
-
 footer {
     background-color: rgb(30, 30, 30);
     width: 100%;
     box-sizing: border-box; 
+
+
 }
 
 
@@ -44,7 +13,7 @@ footer {
     flex-direction: column;
     align-items: center;
     color: white;
-    padding: 50px 20px; 
+
     width: 100%;
     box-sizing: border-box;
 }

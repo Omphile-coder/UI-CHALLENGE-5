@@ -70,10 +70,51 @@ position: relative;
 }
 
 .hero-spacing{
-  line-height: 2px;
+  line-height:10px;
 }
 
 .shop-btn{
   border-radius: 8px;
   border: none;
 }
+
+@media screen and (max-width: 1040px) {
+    .wave-container{
+
+      position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    }
+
+     .wave-container svg {
+      position: relative;
+    display: block;
+    width: calc(128% + 1.3px);
+    height: 151px;
+     }
+  }
+
+  @media screen and (max-width: 768px) {
+    .wave-container{
+
+     position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    }
+
+     .wave-container svg {
+      position: relative;
+    display: block;
+    width: calc(128% + 1.3px);
+    height: 151px;
+    transform: rotateY(180deg);
+     }
+  }
