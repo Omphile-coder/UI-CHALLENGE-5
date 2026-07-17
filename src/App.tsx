@@ -59,7 +59,7 @@ function App() {
       name: "Coffee Connoiseur",
       imgLink: coffeeConnoiseur2,
       description:
-        "The atmosphere in-store is just unmatched. I settled into a cozy corner by the window with a beautifully crafted iced Americano. The blend they use has this bright, slightly fruity note that tastes so refreshing over ice. It’s easily my new favorite spot to just sit back, relax, and watch the world go b",
+        "The atmosphere in-store is just unmatched. I settled into a cozy corner by the window with a beautifully crafted iced Americano. The blend they use has this bright, slightly fruity note that tastes so refreshing over ice. It’s easily my new favorite spot to just sit back, relax, and watch the world go back to normal",
       btnDesc: "Read More",
     },
     {
