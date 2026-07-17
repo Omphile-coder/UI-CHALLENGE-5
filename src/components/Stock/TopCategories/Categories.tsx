@@ -12,6 +12,8 @@ export const Categories = () => {
           color: "black",
           textAlign: "center",
           justifyContent: "center",
+          fontWeight: 800,
+          fontFamily: "Poppins",
         }}
       >
         TOP CATEGORIES
@@ -19,9 +21,11 @@ export const Categories = () => {
       <Text
         variant="p"
         style={{
-          color: "grey",
+          color: "#1E1E1E",
           textAlign: "center",
           justifyContent: "center",
+          fontWeight: 400,
+          fontFamily: "Poppins",
         }}
       >
         Explore The Recent Most Bought Shakes This Week
@@ -30,14 +34,17 @@ export const Categories = () => {
       <ContentContainer className={styles["divs-container"]}>
         <ContentContainer className={styles["item-one"]}>
           <Text variant="h2">Coffee Mocha</Text>
+          <hr className={styles["line"]} />
           <Text variant="p">View More</Text>
         </ContentContainer>
         <ContentContainer className={styles["item-two"]}>
           <Text variant="h2">Expresso Americano</Text>
+          <hr className={styles["line"]} />
           <Text variant="p">View More</Text>
         </ContentContainer>
         <ContentContainer className={styles["item-three"]}>
           <Text variant="h2">Cuppacino</Text>
+          <hr className={styles["line"]} />
           <Text variant="p">View More</Text>
         </ContentContainer>
       </ContentContainer>

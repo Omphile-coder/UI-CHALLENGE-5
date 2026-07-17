@@ -24,7 +24,10 @@ export const Hero = () => {
 
       <div className={styles["hero-overlay"]}>
         <div className={styles["hero-spacing"]}>
-          <Text variant="h1" style={{ fontWeight: "small", color: "white" }}>
+          <Text
+            variant="h1"
+            style={{ fontWeight: 300, color: "white", letterSpacing: 2 }}
+          >
             FRESHLY ROASTED
           </Text>
 

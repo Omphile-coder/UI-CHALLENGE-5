@@ -57,3 +57,7 @@
     font-size: clamp(0.9rem, 2vw, 1rem);
     margin-top: 8px;
 }
+.line{
+
+    width: 50px;
+}
