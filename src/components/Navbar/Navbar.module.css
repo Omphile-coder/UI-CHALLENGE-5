@@ -23,8 +23,10 @@
 .links {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
     text-decoration: none;
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 .rightActions {
