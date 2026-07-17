@@ -13,7 +13,7 @@ import coffeeConnoiseur2 from "./assets/coffee-connoiseur-2.png";
 import coffeeConnoiseur3 from "./assets/coffee-connoiseur-3.png";
 import { ContentContainer } from "./components/ContentContainer/ContentContainer";
 import { StockContainer } from "././components/Stock/LatestBlogs/StockContainer";
-import { TopCategoriesCard } from "./components/Stock/TopCategories/TopCategoriesCard";
+
 import { TopMilk } from "./components/Stock/TopMilkShakes/TopMilk";
 
 import mocha from "./assets/mocha-shake.png";
@@ -72,16 +72,18 @@ function App() {
   ]);
 
   return (
-    <div id="app-container">
-      <div id="scrollable">
-        <Navbar />
-        <Hero />
-        <Categories />
-        <TopMilk topShakes={topShakes} />
-        <StockContainer stock={stock} />
+    <>
+      <div id="app-container">
+        <div id="scrollable">
+          <Navbar />
+          <Hero />
+          <Categories />
+          <TopMilk topShakes={topShakes} />
+          <StockContainer stock={stock} />
+        </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 }
 
