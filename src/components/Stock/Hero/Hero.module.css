@@ -79,6 +79,15 @@ position: relative;
 .shop-btn{
   border-radius: 8px;
   border: none;
+  cursor: pointer;
+}
+
+.shop-btn:hover{
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-weight: 300;
+  background-color: gray;
 }
 
 @media screen and (max-width: 1040px) {
