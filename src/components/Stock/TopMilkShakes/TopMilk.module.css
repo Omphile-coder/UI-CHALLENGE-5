@@ -60,3 +60,14 @@
     margin-top: 10px;
 }
 
+.btn:hover{
+    background-color: white;
+    color:#6E5A53;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
