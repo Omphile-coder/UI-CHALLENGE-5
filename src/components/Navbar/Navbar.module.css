@@ -77,3 +77,11 @@
     gap: 50px;
     font-family: "Poppins";
 }
+
+.link:hover{
+    text-decoration: none;
+    color: white;
+    font-weight: 600px;
+    gap: 50px;
+    font-family: "Poppins";
+}
