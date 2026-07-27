@@ -42,9 +42,6 @@ The application layout fluidly adapts across multiple screen sizes:
 * **Read Articles:** Browse the "Latest Blogs" section featuring customer reviews and coffee connoisseur highlights.
 * **Footer Navigation:** Access company information, social links, and data settings at the bottom of the page.
 
-## Data Storage
-
-Currently, the application serves as a static frontend UI showcase. All product details, pricing, and blog content are managed at the component level to demonstrate structural styling and responsive layout behavior.
 
 ## Future Improvements
 
