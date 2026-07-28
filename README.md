@@ -53,3 +53,25 @@ The application layout fluidly adapts across multiple screen sizes:
 
 ## Deployed on Vercel:
 * [Link](https://ui-challenge-5.vercel.app/)
+
+  ## How to Run the Project Locally
+
+1. **Download the project:** Click on the **Code** button and select **Download ZIP**.
+2. **Extract the files:** Locate the downloaded ZIP file on your computer and extract/unzip its contents.
+3. **Open the project in your editor:** 
+   * Open Visual Studio Code.
+   * Go to **File** > **Open Folder...**
+   * Locate the extracted folder, specifically click on **UI-CHALLENGE-5**, and click **Select Folder**.
+4. **Install dependencies:** Open the VS Code terminal and run the following command to download the required packages:
+   ```bash
+   npm install
+   ```
+5. **Start the development server:** Once the installation is complete, start the app by running:
+   ```bash
+   npm run dev
+   ```
+
+
+## Author
+**Omphile Lucas**
+* GitHub: [@Omphile-coder](https://github.com/Omphile-coder)
