@@ -1,75 +1,82 @@
-# React + TypeScript + Vite
+# Cofty Solutions Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive React frontend application showcasing a premium landing page for a coffee brand, "Cofty Solutions."
+Built with React, TypeScript, and CSS Modules, the application translates a high-fidelity UI design into a pixel-perfect, interactive web experience featuring fluid layouts, custom SVG shape dividers, and modern component architecture.
 
-Currently, two official plugins are available:
+## Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![The app Preview] (src/asset/preview.jpeg)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Interactive hamburger navigation menu for mobile devices
+- Dynamic hero section featuring custom SVG wavy shape dividers
+- Responsive grid layouts for Top Categories, Top Milkshakes, and Latest Blogs
+- Fluid typography that scales seamlessly across all viewports
+- Pill-shaped interactive buttons for likes and call-to-actions
+- Complex footer layout utilizing modern CSS Grid
+- Fully responsive design without relying on rigid pixel constraints
+- Clean, modular component architecture
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- CSS Modules
+- Bootstrap Icons
+- Vite
+- ShapeDivider (SVG generation)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Responsive Design
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+The application layout fluidly adapts across multiple screen sizes:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Device       | Width   |
+| :----------- | :------ |
+| Mobile       | 320px   |
+| Large Mobile | 480px   |
+| Tablet       | 768px   |
+| Laptop       | 1024px  |
+| Desktop      | 1200px+ |
 
-```
+## Usage
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Navigation:** Use the top navbar to browse, or the hamburger menu on screens under 850px.
+- **Explore Products:** View the "Top Categories" and "Top Milkshakes" grids, complete with pricing and responsive imagery.
+- **Read Articles:** Browse the "Latest Blogs" section featuring customer reviews and coffee connoisseur highlights.
+- **Footer Navigation:** Access company information, social links, and data settings at the bottom of the page.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Future Improvements
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Dynamic data fetching for milkshakes and blogs
+- User authentication for the "Shop Now" checkout flow
+- Shopping cart state management
+- Dark mode theme functionality
+- Sorting and filtering options for the coffee menu
 
-```
+## Deployed on Vercel:
+
+- [Link](https://ui-challenge-5.vercel.app/)
+
+  ## How to Run the Project Locally
+
+1. **Download the project:** Click on the **Code** button and select **Download ZIP**.
+2. **Extract the files:** Locate the downloaded ZIP file on your computer and extract/unzip its contents.
+3. **Open the project in your editor:**
+   - Open Visual Studio Code.
+   - Go to **File** > **Open Folder...**
+   - Locate the extracted folder, specifically click on **UI-CHALLENGE-5**, and click **Select Folder**.
+4. **Install dependencies:** Open the VS Code terminal and run the following command to download the required packages:
+   ```bash
+   npm install
+   ```
+5. **Start the development server:** Once the installation is complete, start the app by running:
+   ```bash
+   npm run dev
+   ```
+
+## Author
+
+**Omphile Lucas**
+
+- GitHub: [@Omphile-coder](https://github.com/Omphile-coder)
