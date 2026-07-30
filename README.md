@@ -5,7 +5,7 @@ Built with React, TypeScript, and CSS Modules, the application translates a high
 
 ## Preview
 
-![The App Preview](src/assets/preview.jpeg)
+![The App Preview] (src/assets/preview.jpeg)
 
 ## Features
 
