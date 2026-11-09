@@ -13,7 +13,7 @@ The page follows the reference's peach palette, wave-shaped coffee hero, categor
 Use Node.js 22.12 or later. From the folder containing `package.json`:
 
 ```sh
-npm ci
+npm i
 npm run dev
 ```
 
