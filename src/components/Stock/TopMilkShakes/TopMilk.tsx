@@ -11,6 +11,7 @@ type TopMilkShakesProps = {
   topShakes: TopMilkShakeItemCardProps[];
 };
 
+/** Renders the featured milkshakes from the list supplied by App. Product names serve as unique card keys. */
 export const TopMilk = ({ topShakes }: TopMilkShakesProps) => {
   return (
     <ContentContainer>

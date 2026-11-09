@@ -5,6 +5,7 @@ type Props = {
   className?: string;
 };
 
+/** Keeps sections aligned to a shared max width while letting callers supply their own layout class. */
 export const ContentContainer = ({ children, className }: Props) => {
   return (
     <div

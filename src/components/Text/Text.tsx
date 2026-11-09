@@ -6,6 +6,7 @@ type Props = {
   style?: React.CSSProperties;
 };
 
+/** Lets callers choose a semantic HTML element through variant. The default wrapper is a div. */
 export const Text = ({ variant, children, style }: Props) => {
   if (variant == "h1") return <h1 style={style}>{children}</h1>;
   if (variant == "h2") return <h2 style={style}>{children}</h2>;

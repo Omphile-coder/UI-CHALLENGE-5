@@ -13,6 +13,7 @@ const links = [
   { label: "Contact", href: "#contact" },
 ];
 
+/** Shares the same section links across desktop and mobile. The open state controls the mobile dropdown. */
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -25,6 +26,7 @@ export const Navbar = () => {
           id="main-navigation-links"
           className={`${styles.links} ${isMenuOpen ? styles.open : ""}`}
         >
+          {/* Closing the dropdown still lets the browser follow the anchor normally. */}
           {links.map(({ label, href }) => (
             <a
               key={href}

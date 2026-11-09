@@ -10,6 +10,7 @@ export type TopMilkShakeItemCardProps = {
   likes: number;
 };
 
+/** Displays a product's supplied price and likes. The like and purchase buttons are prototype placeholders. */
 export const TopMilkShakeItemCard = ({
   name,
   imgLink,

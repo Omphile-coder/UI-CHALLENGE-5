@@ -7,6 +7,7 @@ type StockProps = {
   stock: itemCardProps[];
 };
 
+/** Builds the Latest Blogs section from the article data supplied by App. */
 export const StockContainer = ({ stock }: StockProps) => {
   return (
     <ContentContainer>
@@ -31,6 +32,7 @@ export const StockContainer = ({ stock }: StockProps) => {
         Read the latest stories from coffee lovers
       </Text>
 
+      {/* Media jumps directly to the photo cards, below the Blog heading. */}
       <div id="media" tabIndex={-1} className={styles["item-container"]}>
         {stock.map((article) => (
           <ItemCard key={article.imgLink} {...article} />

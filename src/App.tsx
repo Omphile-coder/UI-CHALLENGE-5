@@ -14,6 +14,7 @@ import caramel from "./assets/caramel-shake.png";
 import Categories from "./components/Stock/TopCategories/Categories";
 import { Hero } from "./components/Stock/Hero/Hero";
 
+// The product and blog sections receive their demo data from these lists.
 const topShakes = [
   {
     name: "Mocha Shake",
@@ -62,6 +63,7 @@ const stock = [
   },
 ];
 
+/** Assembles the storefront. The section IDs are navbar targets, and tabIndex={-1} lets a jump move keyboard focus to its destination. */
 function App() {
   return (
     <>

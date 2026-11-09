@@ -2,6 +2,7 @@ import styles from "./Categories.module.css";
 import { ContentContainer } from "../../ContentContainer/ContentContainer";
 import { Text } from "../../Text/Text";
 
+/** Shows the featured coffee categories. Each card's CSS class sets its background image. */
 export const Categories = () => {
   return (
     <ContentContainer className={styles.MainContainer}>

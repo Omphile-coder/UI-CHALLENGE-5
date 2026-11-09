@@ -1,6 +1,7 @@
 import styles from "./Hero.module.css";
 import imageIcon from "../../../assets/fullNavImage.png";
 
+/** Layers the headline and SVG dividers over the coffee image. Shop now shares the navbar's Menu target. */
 export const Hero = () => {
   return (
     <div className={styles["top-cont"]}>

@@ -1,6 +1,7 @@
 import styles from "./Table.module.css";
 import { ContentContainer } from "../ContentContainer/ContentContainer";
 
+/** Supplies the footer grid with static product, company, and social content from the design brief. */
 export const Table = () => {
   return (
     <ContentContainer className={styles.footerGrid}>

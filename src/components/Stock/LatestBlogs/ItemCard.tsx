@@ -7,6 +7,7 @@ export type itemCardProps = {
   imgLink: string;
   btnDesc: string;
 };
+/** Displays a café story with a decorative photo and a placeholder Read More button. */
 export const ItemCard = ({
   name,
   imgLink,

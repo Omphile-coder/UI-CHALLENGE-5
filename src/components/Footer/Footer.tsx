@@ -3,6 +3,7 @@ import styles from "./Footer.module.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Table from "../Table/Table";
 
+/** Hosts the Contact anchor and groups the company information with the policy labels. */
 export const Footer = () => {
   return (
     <footer id="contact" tabIndex={-1}>
