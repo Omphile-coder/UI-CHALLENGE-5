@@ -1,82 +1,41 @@
-# Cofty Solutions Web Application
+# Cofty Solutions
 
-A modern and responsive React frontend application showcasing a premium landing page for a coffee brand, "Cofty Solutions."
-Built with React, TypeScript, and CSS Modules, the application translates a high-fidelity UI design into a pixel-perfect, interactive web experience featuring fluid layouts, custom SVG shape dividers, and modern component architecture.
+Cofty Solutions is a coffee storefront prototype built for UI/UX Challenge 5. I chose the challenge to practice building a responsive React frontend and explore how coffee lovers could find drinks and café stories in one place.
 
-## Preview
+## Design reference
 
-![The App Preview](src/assets/preview.jpeg)
+![Challenge brief showing the Cofty Solutions homepage](src/assets/preview.jpeg)
 
-## Features
+The page follows the reference's peach palette, wave-shaped coffee hero, category cards, milkshake cards, blog cards, and dark footer. It uses React, TypeScript, Vite, CSS Modules, and Bootstrap Icons.
 
-- Interactive hamburger navigation menu for mobile devices
-- Dynamic hero section featuring custom SVG wavy shape dividers
-- Responsive grid layouts for Top Categories, Top Milkshakes, and Latest Blogs
-- Fluid typography that scales seamlessly across all viewports
-- Pill-shaped interactive buttons for likes and call-to-actions
-- Complex footer layout utilizing modern CSS Grid
-- Fully responsive design without relying on rigid pixel constraints
-- Clean, modular component architecture
+## Run locally
 
-## Technologies Used
+Use Node.js 22.12 or later. From the folder containing `package.json`:
 
-- React
-- TypeScript
-- CSS Modules
-- Bootstrap Icons
-- Vite
-- ShapeDivider (SVG generation)
+```sh
+npm ci
+npm run dev
+```
 
-## Responsive Design
+Open the local address Vite prints in the terminal.
 
-The application layout fluidly adapts across multiple screen sizes:
+```sh
+npm run lint
+npx tsc --noEmit -p tsconfig.app.json
+npm run build
+```
 
-| Device       | Width   |
-| :----------- | :------ |
-| Mobile       | 320px   |
-| Large Mobile | 480px   |
-| Tablet       | 768px   |
-| Laptop       | 1024px  |
-| Desktop      | 1200px+ |
+## Navigate the prototype
 
-## Usage
+- **Home** returns to the hero.
+- **Menu** and **Shop now** jump to the coffee categories, followed by the milkshakes.
+- **Blog** jumps to the Latest Blogs heading. **Media** jumps directly to the photo cards in that section.
+- **Contact** jumps to the company information in the footer.
+- On narrow screens, open the hamburger menu to access the same links. The menu closes after you choose a destination.
 
-- **Navigation:** Use the top navbar to browse, or the hamburger menu on screens under 850px.
-- **Explore Products:** View the "Top Categories" and "Top Milkshakes" grids, complete with pricing and responsive imagery.
-- **Read Articles:** Browse the "Latest Blogs" section featuring customer reviews and coffee connoisseur highlights.
-- **Footer Navigation:** Access company information, social links, and data settings at the bottom of the page.
+Search, likes, purchasing, and article buttons are visual placeholders in the prototype.
 
-## Future Improvements
+## Deployment and author
 
-- Dynamic data fetching for milkshakes and blogs
-- User authentication for the "Shop Now" checkout flow
-- Shopping cart state management
-- Dark mode theme functionality
-- Sorting and filtering options for the coffee menu
-
-## Deployed on Vercel:
-
-- [Link](https://ui-challenge-5.vercel.app/)
-
-  ## How to Run the Project Locally
-
-1. **Download the project:** Click on the **Code** button and select **Download ZIP**.
-2. **Extract the files:** Locate the downloaded ZIP file on your computer and extract/unzip its contents.
-3. **Open the project in your editor:**
-   - Open Visual Studio Code.
-   - Go to **File** > **Open Folder...**
-   - Locate the extracted folder, specifically click on **UI-CHALLENGE-5**, and click **Select Folder**.
-4. **Install dependencies:** Open the VS Code terminal and run the following command to download the required packages:
-   ```bash
-   npm install
-   ```
-5. **Start the development server:** Once the installation is complete, start the app by running:
-   ```bash
-   npm run dev
-   ```
-
-## Author
-
-**Omphile Lucas**
-
-- GitHub: [@Omphile-coder](https://github.com/Omphile-coder)
+- [Vercel preview](https://ui-challenge-5.vercel.app/)
+- [Omphile Lucas on GitHub](https://github.com/Omphile-coder)
