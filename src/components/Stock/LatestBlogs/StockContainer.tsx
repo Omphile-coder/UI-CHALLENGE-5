@@ -1,4 +1,3 @@
-import React from "react";
 import { ContentContainer } from "../../ContentContainer/ContentContainer";
 import { ItemCard, type itemCardProps } from "./ItemCard";
 import { Text } from "../../Text/Text";
@@ -29,22 +28,13 @@ export const StockContainer = ({ stock }: StockProps) => {
           justifyContent: "center",
         }}
       >
-        Explore The Recent Most Bought Shakes This Week
+        Read the latest stories from coffee lovers
       </Text>
 
-      <div className={styles["item-container"]}>
-        {stock &&
-          stock.length > 0 &&
-          stock.map((product) => {
-            return (
-              <ItemCard
-                name={product.name}
-                description={product.description}
-                imgLink={product.imgLink}
-                btnDesc={product.btnDesc}
-              />
-            );
-          })}
+      <div id="media" tabIndex={-1} className={styles["item-container"]}>
+        {stock.map((article) => (
+          <ItemCard key={article.imgLink} {...article} />
+        ))}
       </div>
     </ContentContainer>
   );

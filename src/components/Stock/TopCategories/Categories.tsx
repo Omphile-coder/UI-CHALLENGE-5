@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Categories.module.css";
 import { ContentContainer } from "../../ContentContainer/ContentContainer";
 import { Text } from "../../Text/Text";
@@ -13,7 +12,6 @@ export const Categories = () => {
           textAlign: "center",
           justifyContent: "center",
           fontWeight: 800,
-          fontFamily: "Poppins",
         }}
       >
         TOP CATEGORIES
@@ -25,10 +23,9 @@ export const Categories = () => {
           textAlign: "center",
           justifyContent: "center",
           fontWeight: 400,
-          fontFamily: "Poppins",
         }}
       >
-        Explore The Recent Most Bought Shakes This Week
+        Explore The Recent Most Bought Drinks This Week
       </Text>
 
       <ContentContainer className={styles["divs-container"]}>
@@ -38,12 +35,12 @@ export const Categories = () => {
           <Text variant="p">View More</Text>
         </ContentContainer>
         <ContentContainer className={styles["item-two"]}>
-          <Text variant="h2">Expresso Americano</Text>
+          <Text variant="h2">Espresso Americano</Text>
           <hr className={styles["line"]} />
           <Text variant="p">View More</Text>
         </ContentContainer>
         <ContentContainer className={styles["item-three"]}>
-          <Text variant="h2">Cuppacino</Text>
+          <Text variant="h2">Cappuccino</Text>
           <hr className={styles["line"]} />
           <Text variant="p">View More</Text>
         </ContentContainer>

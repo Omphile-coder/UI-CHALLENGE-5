@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Stock.module.css";
 import { Text } from "../../Text/Text";
 
@@ -19,7 +18,7 @@ export const ItemCard = ({
       <img
         src={imgLink}
         className={styles["item-image"]}
-        alt={`image of product: ${description}`}
+        alt=""
       />
       <Text variant={"span"} style={{ fontWeight: 600 }}>
         {name}

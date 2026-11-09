@@ -1,13 +1,12 @@
-import React from "react";
 import styles from "./Hero.module.css";
 import imageIcon from "../../../assets/fullNavImage.png";
-import { Text } from "../../Text/Text";
 
 export const Hero = () => {
   return (
     <div className={styles["top-cont"]}>
       <div className={styles["wave-container-top"]}>
         <svg
+          aria-hidden="true"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
@@ -23,23 +22,16 @@ export const Hero = () => {
       <img src={imageIcon} alt="Coffee beans" className={styles["top-Image"]} />
 
       <div className={styles["hero-overlay"]}>
-        <div className={styles["hero-spacing"]}>
-          <Text
-            variant="h1"
-            style={{ fontWeight: 300, color: "white", letterSpacing: 2 }}
-          >
-            FRESHLY ROASTED
-          </Text>
-
-          <Text variant="h1">COFFEE</Text>
-        </div>
-        <br />
-        <br />
-        <button className={styles["shop-btn"]}>Shop now</button>
+        <h1 className={styles["hero-title"]}>
+          <span>FRESHLY ROASTED</span>
+          COFFEE
+        </h1>
+        <a className={styles["shop-btn"]} href="#menu">Shop now</a>
       </div>
 
       <div className={styles["wave-container"]}>
         <svg
+          aria-hidden="true"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"

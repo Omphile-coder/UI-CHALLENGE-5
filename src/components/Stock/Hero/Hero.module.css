@@ -1,11 +1,3 @@
-.top-Image{
-
-    height: 40%;
-    width: 100%;
-  
-}
-
-
 .top-cont {
   position: relative;
   width: 100%;
@@ -14,8 +6,9 @@
 }
 
 .top-Image {
+  display: block;
   width: 100%;
-  height: 400px; 
+  height: clamp(280px, 43vw, 480px);
   object-fit: cover;
 }
 
@@ -25,7 +18,7 @@
   left: 10%;
   transform: translateY(-50%);
   color: #D0AF9E; 
-   font-family: "Poppins";
+   z-index: 1;
 }
 
 .wave-container-top{
@@ -42,7 +35,7 @@
 position: relative;
     display: block;
     width: calc(148% + 1.3px);
-    height: 153px;
+    height: clamp(46px, 10vw, 120px);
 }
 
 
@@ -64,7 +57,8 @@ position: relative;
     position: relative;
     display: block;
     width: calc(148% + 1.3px);
-    height: 113px;
+    height: clamp(52px, 10vw, 113px);
+    /* Mirror the bottom wave so it slopes in the opposite direction. */
     transform: rotateY(180deg);
 }
 
@@ -72,61 +66,31 @@ position: relative;
     fill: rgb(234,205,189);
 }
 
-.hero-spacing{
-  line-height:10px;
+.hero-title {
+  margin: 0 0 16px;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 1;
 }
 
-.shop-btn{
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-}
-
-.shop-btn:hover{
-  border-radius: 8px;
-  border: none;
+.hero-title span {
+  display: block;
   color: white;
+  font-size: 0.45em;
   font-weight: 300;
-  background-color: gray;
+  letter-spacing: 0.06em;
 }
 
-@media screen and (max-width: 1040px) {
-    .wave-container{
+.shop-btn {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: white;
+  color: #1e1e1e;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
 
-      position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    }
-
-     .wave-container svg {
-      position: relative;
-    display: block;
-    width: calc(128% + 1.3px);
-    height: 151px;
-     }
-  }
-
-  @media screen and (max-width: 768px) {
-    .wave-container{
-
-     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    }
-
-     .wave-container svg {
-      position: relative;
-    display: block;
-    width: calc(128% + 1.3px);
-    height: 151px;
-    transform: rotateY(180deg);
-     }
-  }
+.shop-btn:hover,
+.shop-btn:focus-visible {
+  text-decoration: underline;
+}

@@ -1,4 +1,3 @@
-import React from "react";
 import { Text } from "../../Text/Text";
 import styles from "./TopMilk.module.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -37,19 +36,9 @@ export const TopMilk = ({ topShakes }: TopMilkShakesProps) => {
       </Text>
 
       <div className={styles["item-container"]}>
-        {topShakes &&
-          topShakes.length > 0 &&
-          topShakes.map((product) => {
-            return (
-              <TopMilkShakeItemCard
-                likes={product.likes}
-                imgLink={product.imgLink}
-                name={product.name}
-                price={product.price}
-                btnDesc={product.btnDesc}
-              />
-            );
-          })}
+        {topShakes.map((product) => (
+          <TopMilkShakeItemCard key={product.name} {...product} />
+        ))}
       </div>
     </ContentContainer>
   );

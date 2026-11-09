@@ -2,7 +2,7 @@
 .navContainer {
     position: fixed;
     top: 0;
-    height: 100px;
+    height: var(--nav-height);
     width: 100%;
     background-color: rgb(234,205,189);
     z-index: 100;
@@ -17,13 +17,13 @@
 }
 
 .logo {
-    height: 100px;
+    height: var(--nav-height);
 }
 
 .links {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: clamp(24px, 4vw, 50px);
     text-decoration: none;
     margin-left: auto;
     margin-right: 10px;
@@ -45,7 +45,7 @@
 }
 
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 700px) {
     .hamburgerBtn {
         display: block;
     }
@@ -53,11 +53,15 @@
     .links {
         display: none; 
         position: absolute;
-        top: 100px; 
+        top: var(--nav-height);
         left: 0;
         width: 100%;
+        margin: 0;
         background-color: rgb(234,205,189);
         flex-direction: column;
+        box-sizing: border-box;
+        max-height: calc(100dvh - var(--nav-height));
+        overflow-y: auto;
         padding: 20px 0;
         gap: 20px;
         box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
@@ -71,17 +75,13 @@
 .search-icon{
     height: 50px;
 }
-.link{
+.link {
     text-decoration: none;
-    color: black;
-    gap: 50px;
-    font-family: "Poppins";
+    color: #1e1e1e;
 }
 
-.link:hover{
-    text-decoration: none;
-    color: white;
-    font-weight: 600px;
-    gap: 50px;
-    font-family: "Poppins";
+.link:hover,
+.link:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }

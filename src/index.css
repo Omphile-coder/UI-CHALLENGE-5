@@ -1,0 +1,16 @@
+:root {
+  --nav-height: 100px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(234, 205, 189);
+  font-family: Poppins, Montserrat, system-ui, sans-serif;
+}
+
+@media (max-width: 700px) {
+  :root {
+    --nav-height: 72px;
+  }
+}

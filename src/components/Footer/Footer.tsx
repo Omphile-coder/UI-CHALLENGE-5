@@ -1,4 +1,3 @@
-import React from "react";
 import { ContentContainer } from "../ContentContainer/ContentContainer";
 import styles from "./Footer.module.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -6,7 +5,7 @@ import Table from "../Table/Table";
 
 export const Footer = () => {
   return (
-    <footer>
+    <footer id="contact" tabIndex={-1}>
       <ContentContainer className={styles.footer}>
         <Table />
 

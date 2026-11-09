@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./TopMilk.module.css";
 import { Text } from "../../Text/Text";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -8,7 +7,7 @@ export type TopMilkShakeItemCardProps = {
   imgLink: string;
   price: number;
   btnDesc: string;
-  likes: 0;
+  likes: number;
 };
 
 export const TopMilkShakeItemCard = ({
